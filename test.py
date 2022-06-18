@@ -1,0 +1,1 @@
+var="thia sis a simple py file"
