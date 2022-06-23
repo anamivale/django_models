@@ -11,7 +11,7 @@ class Post(models.Model):
     text = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     author = models.TextField()
-    published_date = models.DateTimeField(auto_now_add=True)
+    published_date = models.DateTimeField(auto_now=True)
 
     def get_absolute_url(self):
         return reverse("blog_post_detail", args=[self.slug])
